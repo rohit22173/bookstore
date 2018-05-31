@@ -2,9 +2,19 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
+  template: '',
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title: string;
+  author: string;
+
+  constructor() {
+    this.title = 'Harry Potter';
+    this.author = 'J. K. Rowling';
+  }
+
+  public closeModal(event) {
+
+  }
 }
